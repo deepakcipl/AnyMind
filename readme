@@ -1,0 +1,20 @@
+prerequisites
+ Postgresql DB server is required to test service.
+ current DB setting is as below. 
+    url: jdbc:postgresql://localhost:5432/bitcoin
+    username: root
+    password: root 
+
+
+
+Steps to start microservice
+1. got to root project directory
+	mvn clean 
+2. build microservice
+	mvn install
+3. run microservice
+	java -jar target/bitcoin-0.0.1-SNAPSHOT.jar -server.port=8081
+	
+	
+For API testing refer file  "bitcoin.postman_collection.json"
+
