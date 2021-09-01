@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "bitcoin",
+		"_postman_id": "bd599598-23f7-eeb5-1408-9fc06f8b82fe",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hourlyReport",
+			"request": {
+				"url": "http://localhost:8081/wallet/report",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n         \"startDatetime\": \"2021-09-28T00:00:00+00:00\",\n         \"endDatetime\": \"2021-09-28T23:00:00+00:00\"\n       }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addBitcoin",
+			"request": {
+				"url": "http://localhost:8081/wallet/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n         \"datetime\": \"2021-09-28T10:30:00+09:00\",\n         \"amount\": 1.5\n       }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
